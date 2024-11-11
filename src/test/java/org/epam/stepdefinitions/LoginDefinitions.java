@@ -1,23 +1,18 @@
 package org.epam.stepdefinitions;
 
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.commons.lang3.SystemProperties;
 import org.epam.SauceDemoTest;
 import org.epam.businessobjects.SauceDemoLoginBO;
 import org.epam.util.WebDriverSingleton;
-import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
 
 import static org.epam.util.WebDriverSingleton.getDriver;

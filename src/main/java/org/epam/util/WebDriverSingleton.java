@@ -15,14 +15,20 @@ public class WebDriverSingleton {
 
     static {
         String browser = SystemProperties.getProperty("browser");
-        if (browser == null || browser.equals("edge")) {
-            manager = WebDriverManager.edgedriver();
-        } else if (browser.equals("firefox")) {
-            manager = WebDriverManager.firefoxdriver();
-        } else if (browser.equals("chrome")) {
-            manager = WebDriverManager.chromedriver();
-        } else
-            throw new IllegalArgumentException(browser + " is not supported");
+        switch (browser) {
+            case null:
+            case "edge":
+                manager = WebDriverManager.edgedriver();
+                break;
+            case "firefox":
+                manager = WebDriverManager.firefoxdriver();
+                break;
+            case "chrome":
+                manager = WebDriverManager.chromedriver();
+                break;
+            default:
+                throw new IllegalArgumentException(browser + " is not supported");
+        }
         manager.setup();
         threadLocalInstance = ThreadLocal.withInitial(WebDriverSingleton::createWebDriver);
     }

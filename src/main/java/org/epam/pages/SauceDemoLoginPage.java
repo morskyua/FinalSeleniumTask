@@ -3,7 +3,7 @@ package org.epam.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SauceDemoLoginPage {
+public class SauceDemoLoginPage extends BasePage {
 
     @FindBy(xpath = "//input[@data-test='username']")
     private WebElement usernameInput;

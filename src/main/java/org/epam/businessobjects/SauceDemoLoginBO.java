@@ -1,16 +1,16 @@
 package org.epam.businessobjects;
 
-import org.epam.util.Util;
 import org.epam.pages.SauceDemoCatalogPage;
 import org.epam.pages.SauceDemoLoginPage;
+import org.epam.util.Util;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class SauceDemoLoginBO {
-    private SauceDemoLoginPage sauceDemoPage;
-    private SauceDemoCatalogPage sauceDemoCatalogPage;
-    private WebDriver driver;
+    private final SauceDemoLoginPage sauceDemoPage;
+    private final SauceDemoCatalogPage sauceDemoCatalogPage;
+    private final WebDriver driver;
 
     public SauceDemoLoginBO(WebDriver driver) {
         this.driver = driver;
