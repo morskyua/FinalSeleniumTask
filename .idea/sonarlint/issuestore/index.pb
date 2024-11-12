@@ -25,5 +25,3 @@ T
 $src/test/java/org/epam/BaseTest.java,4\9\49b2fc22dc7172834cc3189b4a04f54f4e606140
 _
 /src/main/java/org/epam/util/PropertyReader.java,b\1\b1f3abbbc9e84b974099ca998579c142ad291e24
-Z
-*src/test/java/org/epam/SauceDemoTest2.java,b\7\b76c71ac4b8ba83f473dbd57403c912fe3f41f77

@@ -1,7 +1,6 @@
 package org.epam;
 
 import org.epam.businessobjects.SauceDemoLoginBO;
-import org.epam.util.PropertyReader;
 import org.epam.util.WebDriverSingleton;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +20,6 @@ import static org.hamcrest.Matchers.equalTo;
 public class SauceDemoTest extends BaseTest {
     private static final Logger logger = LoggerFactory.getLogger(SauceDemoTest.class);
     private SauceDemoLoginBO sauceDemoLoginBO;
-    private final PropertyReader propertyReader = PropertyReader.getPropertyReader("src/test/resources/prod.properties");
 
     @BeforeEach
     public void setup() {
